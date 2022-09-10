@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass=runner.externalCucumberOptions -Dexec.classpathScope="test"

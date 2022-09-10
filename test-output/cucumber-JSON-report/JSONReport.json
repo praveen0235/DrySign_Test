@@ -1,0 +1,940 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-10T07:21:22.047Z",
+        "line": 4,
+        "name": "Group SignIN Menu Validation",
+        "description": "",
+        "id": "drysign-cases;group-signin-menu-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 2742374200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DashboardS.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19907553400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to given URL \"https://drysign.exelatech.com/signDocument?key\u003dXwXk1GhUmFdT4VTJZA980qZwY\u0026locale\u003den\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://drysign.exelatech.com/signDocument?key\u003dXwXk1GhUmFdT4VTJZA980qZwY\u0026locale\u003den\"",
+                  "offset": 22
+                }
+              ],
+              "location": "DashboardS.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 226235000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1877912000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "select agree check box",
+            "match": {
+              "location": "DashboardS.selectagreecheckbox()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 357738400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1174340600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on accept button",
+            "match": {
+              "location": "DashboardS.click_on_accept_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1583705700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1743610600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on OK button",
+            "match": {
+              "location": "DashboardS.click_on_OK_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 207739500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1229850000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on signature option",
+            "match": {
+              "location": "DashboardS.click_on_signature_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 302779100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1751575400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on type option and select the sign",
+            "match": {
+              "location": "DashboardS.click_on_type_option()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 239804900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1045888200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "save it",
+            "match": {
+              "location": "DashboardS.save_it()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 263055600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2580096400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "system should display download, reject and finish options",
+            "match": {
+              "location": "DashboardS.system_should_display_download_reject_and_finish_options()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 211045800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Yes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-10T07:21:59.539Z",
+        "line": 16,
+        "name": "To Verify the UI elements present on the View Plan button pop-up present on the Dashboard",
+        "description": "",
+        "id": "drysign-cases;to-verify-the-ui-elements-present-on-the-view-plan-button-pop-up-present-on-the-dashboard",
+        "after": [
+          {
+            "result": {
+              "duration": 2339036400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DashboardS.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18476543400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "navigate to given URL \"https://drysign-qa.exela.global/#/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://drysign-qa.exela.global/#/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "DashboardS.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 404624200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2188252900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "enter the user name as \"sid12@mailinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sid12@mailinator.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "DashboardS.enter_the_user_name_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 238297400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1388097100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "enter the password as\"Malin@555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Malin@555\"",
+                  "offset": 21
+                }
+              ],
+              "location": "DashboardS.enter_the_password_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 286062300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1411377400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on the sign in button",
+            "match": {
+              "location": "DashboardS.user_click_on_the_sign_in_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 350195800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8301625500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "dashboard window get display",
+            "match": {
+              "location": "DashboardS.dashboard_window_get_display()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 228381900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2166491500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "View Plan buttons should be present",
+            "match": {
+              "location": "DashboardS.view_Plan_buttons_should_be_present()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 275941500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1264240300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user click on View Plan button",
+            "match": {
+              "location": "DashboardS.user_click_on_View_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 228740800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22460459600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Pop Up get displayed with elements",
+            "match": {
+              "location": "DashboardS.pop_Up_get_displayed_with_elements()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 853216100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Yes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-10T07:23:02.407Z",
+        "line": 29,
+        "name": "To Verify the Close icon functionality present on the View Plan pop-up screen present on the Dashboard",
+        "description": "",
+        "id": "drysign-cases;to-verify-the-close-icon-functionality-present-on-the-view-plan-pop-up-screen-present-on-the-dashboard",
+        "after": [
+          {
+            "result": {
+              "duration": 2667792800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DashboardS.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17337759400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "navigate to given URL \"https://drysign-qa.exela.global/#/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://drysign-qa.exela.global/#/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "DashboardS.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 597085600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1540354200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "enter the user name as \"sid12@mailinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sid12@mailinator.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "DashboardS.enter_the_user_name_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 479686200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2079426700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "enter the password as\"Malin@555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Malin@555\"",
+                  "offset": 21
+                }
+              ],
+              "location": "DashboardS.enter_the_password_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 462338200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1376860700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user click on the sign in button",
+            "match": {
+              "location": "DashboardS.user_click_on_the_sign_in_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 262226500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11349376200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user click on View Plan button",
+            "match": {
+              "location": "DashboardS.user_click_on_View_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 284866400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19432157400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Pop Up get displayed with elements",
+            "match": {
+              "location": "DashboardS.pop_Up_get_displayed_with_elements()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 213606000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1134018200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "existing plan details of the user should get displayed with Upgrade Plan button",
+            "match": {
+              "location": "DashboardS.existing_plan_details_of_the_user_should_get_displayed_with_Upgrade_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 211077100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 740396000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user verify that close icon is present on the pop up",
+            "match": {
+              "location": "DashboardS.user_verify_that_close_icon_is_present_on_the_pop_up()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 409262500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Yes"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-10T07:24:02.994Z",
+        "line": 41,
+        "name": "To Verify register user is able to view only the Higher Plan details than the exisiting plan through Upgrade Plan button present on the View Plan pop-up screen",
+        "description": "    Hirarchy of plans:free trial\u003cindividual monthly \u003cpremium monthly\u003cindividual annual\u003cpremium annual\u003cprofessional",
+        "id": "drysign-cases;to-verify-register-user-is-able-to-view-only-the-higher-plan-details-than-the-exisiting-plan-through-upgrade-plan-button-present-on-the-view-plan-pop-up-screen",
+        "after": [
+          {
+            "result": {
+              "duration": 2584491700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DashboardS.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16192036200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "navigate to given URL \"https://drysign-qa.exela.global/#/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://drysign-qa.exela.global/#/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "DashboardS.navigate_to_given_URL(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 197228000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1741850400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "enter the user name as \"sid12@mailinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sid12@mailinator.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "DashboardS.enter_the_user_name_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 290346000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1202119100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "enter the password as\"Malin@555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Malin@555\"",
+                  "offset": 21
+                }
+              ],
+              "location": "DashboardS.enter_the_password_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 192178200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1190645700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user click on the sign in button",
+            "match": {
+              "location": "DashboardS.user_click_on_the_sign_in_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 244186900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10700151000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user click on View Plan button",
+            "match": {
+              "location": "DashboardS.user_click_on_View_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 214904100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14837019200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Pop Up get displayed with elements",
+            "match": {
+              "location": "DashboardS.pop_Up_get_displayed_with_elements()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 181679800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1078849000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "existing plan details of the user should get displayed with Upgrade Plan button",
+            "match": {
+              "location": "DashboardS.existing_plan_details_of_the_user_should_get_displayed_with_Upgrade_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 276545500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1363929500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user click on Upgrade Plan button",
+            "match": {
+              "location": "DashboardS.user_click_on_Upgrade_Plan_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 182876600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2555580300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "pop up should display only the higher plan than the exisiting",
+            "match": {
+              "location": "DashboardS.pop_up_should_display_only_the_higher_plan_than_the_exisiting()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 376104000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DashboardS.waitToPageRender(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Yes"
+          }
+        ]
+      }
+    ],
+    "name": "DrySign Cases",
+    "description": "",
+    "id": "drysign-cases",
+    "keyword": "Feature",
+    "uri": "file:FeatureFiles/DrySign.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>TestNG:  test10</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test10</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 10 07:52:39 EST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>3918 seconds (3918334 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Module", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: msedge, browserVersion: 95.0.1020.30, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:34262}, msedge: {msedgedriverVersion: 95.0.1020.30 (09f7018e2a65a..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3c77065e17867a5e6c821671ab6...}
+Session ID: 3c77065e17867a5e6c821671ab638476a2ac6a7c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_following_all_solutions_options(Steps.java:330)
+	at ?.click on following all solutions options(file:FeatureFiles/VisualCases.feature:221)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1125853438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1125853438'><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: msedge, browserVersion: 95.0.1020.30, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:34262}, msedge: {msedgedriverVersion: 95.0.1020.30 (09f7018e2a65a..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3c77065e17867a5e6c821671ab6...}
+Session ID: 3c77065e17867a5e6c821671ab638476a2ac6a7c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_following_all_solutions_options(Steps.java:330)
+	at ?.click on following all solutions options(file:FeatureFiles/VisualCases.feature:221)
+</pre></div></td>
+<td>431</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "About Exela", "Visual Cases"</td>
+<td><div><pre>java.io.IOException: Cannot create a file when that file already exists
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1064)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at imageMagick.TestXML.imageCreation(TestXML.java:124)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_latest_blogs_and_capture_it(Steps.java:429)
+	at ?.click on latest blogs and capture it(file:FeatureFiles/VisualCases.feature:317)
+</pre></div><a href='#' onClick='toggleBox("stack-trace127073948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace127073948'><pre>java.io.IOException: Cannot create a file when that file already exists
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1064)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at imageMagick.TestXML.imageCreation(TestXML.java:124)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_latest_blogs_and_capture_it(Steps.java:429)
+	at ?.click on latest blogs and capture it(file:FeatureFiles/VisualCases.feature:317)
+</pre></div></td>
+<td>480</td>
+<td>runner.Runner1@8692d67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BANKING AND FINANCIAL SERVICES SUITE", "Visual Cases"</td>
+<td></td>
+<td>217</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Business Intelligence, Information Governance, and Data Management", "Visual Cases"</td>
+<td></td>
+<td>244</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Facilities & Logistics", "Visual Cases"</td>
+<td></td>
+<td>233</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finance and Accounting Solutions", "Visual Cases"</td>
+<td></td>
+<td>122</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "HUMAN RESOURCES", "Visual Cases"</td>
+<td></td>
+<td>183</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BUSINESS SOLUTIONS FOR THE LEGAL INDUSTRY", "Visual Cases"</td>
+<td></td>
+<td>237</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MARKETING SOLUTIONS", "Visual Cases"</td>
+<td></td>
+<td>203</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BACK OFFICE AND OPERATIONS SOLUTIONS", "Visual Cases"</td>
+<td></td>
+<td>187</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer Support and Customer Experience Management Services", "Visual Cases"</td>
+<td></td>
+<td>160</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Education", "Visual Cases"</td>
+<td></td>
+<td>85</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Energy & Natural Resources", "Visual Cases"</td>
+<td></td>
+<td>88</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Healthcare", "Visual Cases"</td>
+<td></td>
+<td>152</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "High Tech", "Visual Cases"</td>
+<td></td>
+<td>164</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Insurance", "Visual Cases"</td>
+<td></td>
+<td>115</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Modules", "Visual Cases"</td>
+<td></td>
+<td>148</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "General Scenario", "Visual Cases"</td>
+<td></td>
+<td>135</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Discover", "Visual Cases"</td>
+<td></td>
+<td>143</td>
+<td>runner.Runner1@8692d67</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Resources", "Visual Cases"</td>
+<td></td>
+<td>179</td>
+<td>runner.Runner1@8692d67</td></tr>
+</table><p>
+</body>
+</html>

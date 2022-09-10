@@ -1,0 +1,685 @@
+<html>
+<head>
+<title>TestNG:  test31</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test31</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 11 21:43:40 EST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1341 seconds (1341484 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BANKING AND FINANCIAL SERVICES SUITE", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4fc4114e8d6c0f519a71a3151ea..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4fc4114e8d6c0f519a71a3151eaf59cf43c4353f
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Capital Market Activities&apos;)]//ancestor::div[1]/following-sibling::div[2]//a}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace965364228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965364228'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4fc4114e8d6c0f519a71a3151ea..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4fc4114e8d6c0f519a71a3151eaf59cf43c4353f
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Capital Market Activities&apos;)]//ancestor::div[1]/following-sibling::div[2]//a}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:9)
+</pre></div></td>
+<td>56</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Business Intelligence, Information Governance, and Data Management", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Cognitive Automation&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace493467316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace493467316'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Cognitive Automation&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:23)
+</pre></div></td>
+<td>78</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Facilities & Logistics", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: da9ecc220d5cfd5fe9d9e4b9480..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: da9ecc220d5cfd5fe9d9e4b948036f8c9d3dc9dd
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Facilities &amp; Logistics&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Facilities &amp; Logistics&quot;(file:FeatureFiles/VisualCases.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1091416499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1091416499'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: da9ecc220d5cfd5fe9d9e4b9480..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: da9ecc220d5cfd5fe9d9e4b948036f8c9d3dc9dd
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Facilities &amp; Logistics&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Facilities &amp; Logistics&quot;(file:FeatureFiles/VisualCases.feature:37)
+</pre></div></td>
+<td>51</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finance and Accounting Solutions", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: f08b1ae80613e186c9352fad852..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: f08b1ae80613e186c9352fad85274dc4f4587c21
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Finance and Accounting Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Finance and Accounting Solutions&quot;(file:FeatureFiles/VisualCases.feature:68)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1515788807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515788807'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: f08b1ae80613e186c9352fad852..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: f08b1ae80613e186c9352fad85274dc4f4587c21
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Finance and Accounting Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Finance and Accounting Solutions&quot;(file:FeatureFiles/VisualCases.feature:68)
+</pre></div></td>
+<td>51</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "HUMAN RESOURCES", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Employee Onboarding&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace501264576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501264576'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Employee Onboarding&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:77)
+</pre></div></td>
+<td>71</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BUSINESS SOLUTIONS FOR THE LEGAL INDUSTRY", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 9e3f19df42141f04ab06e53e5cb..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9e3f19df42141f04ab06e53e5cb6853df8650358
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Business Solutions for the Legal Industry&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Business Solutions for the Legal Industry&quot;(file:FeatureFiles/VisualCases.feature:92)
+</pre></div><a href='#' onClick='toggleBox("stack-trace619778515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619778515'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 9e3f19df42141f04ab06e53e5cb..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9e3f19df42141f04ab06e53e5cb6853df8650358
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Business Solutions for the Legal Industry&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Business Solutions for the Legal Industry&quot;(file:FeatureFiles/VisualCases.feature:92)
+</pre></div></td>
+<td>52</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MARKETING SOLUTIONS", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4767aae709f6450aaab7a44b43f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4767aae709f6450aaab7a44b43fcdb99d5fa2f80
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Marketing Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Marketing Solutions&quot;(file:FeatureFiles/VisualCases.feature:112)
+</pre></div><a href='#' onClick='toggleBox("stack-trace314106311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace314106311'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4767aae709f6450aaab7a44b43f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4767aae709f6450aaab7a44b43fcdb99d5fa2f80
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Marketing Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Marketing Solutions&quot;(file:FeatureFiles/VisualCases.feature:112)
+</pre></div></td>
+<td>47</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BACK OFFICE AND OPERATIONS SOLUTIONS", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 85f85caf3e2519f72b8f732c748..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 85f85caf3e2519f72b8f732c748509763dc8cd14
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Back Office and Operations Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Back Office and Operations Solutions&quot;(file:FeatureFiles/VisualCases.feature:129)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1553323695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553323695'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 85f85caf3e2519f72b8f732c748..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 85f85caf3e2519f72b8f732c748509763dc8cd14
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Back Office and Operations Solutions&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Back Office and Operations Solutions&quot;(file:FeatureFiles/VisualCases.feature:129)
+</pre></div></td>
+<td>51</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer Support and Customer Experience Management Services", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: cbea43f44122412c08444a6a567..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: cbea43f44122412c08444a6a567e64a303d9d520
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Customer Support and Customer Experience Management Services&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Customer Support and Customer Experience Management Services&quot;(file:FeatureFiles/VisualCases.feature:145)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1010854925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1010854925'><pre>org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: cbea43f44122412c08444a6a567..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: cbea43f44122412c08444a6a567e64a303d9d520
+*** Element info: {Using=xpath, value=//span//a[contains(text(),&apos;Customer Support and Customer Experience Management Services&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.SubModule(pageObjects.java:111)
+	at stepDefinitions.Steps.click_on_sub_module(Steps.java:303)
+	at ?.click on sub module &quot;Customer Support and Customer Experience Management Services&quot;(file:FeatureFiles/VisualCases.feature:145)
+</pre></div></td>
+<td>51</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Healthcare", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Health Information Management&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:172)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1814803538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814803538'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Health Information Management&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:172)
+</pre></div></td>
+<td>65</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Insurance", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Payment Integrity&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:193)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1032226004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1032226004'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(),&apos;Payment Integrity&apos;)]//ancestor::div[1]/following-sibling::div[2]//a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.pageObjects.Suites(pageObjects.java:104)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:288)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:193)
+</pre></div></td>
+<td>60</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Modules", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (d46b5e3d077f4b00bfa65fcd8afb26bfc9c59f4d)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Media &amp; Publishing&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: d46b5e3d077f4b00bfa65fcd8af..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: d46b5e3d077f4b00bfa65fcd8afb26bfc9c59f4d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:203)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1851918036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1851918036'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (d46b5e3d077f4b00bfa65fcd8afb26bfc9c59f4d)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Media &amp; Publishing&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: d46b5e3d077f4b00bfa65fcd8af..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: d46b5e3d077f4b00bfa65fcd8afb26bfc9c59f4d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:203)
+</pre></div></td>
+<td>95</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Module", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (0662eb303bf8d2ab0f46402789f9de78ad6c45a8)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Exela Smart Office&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 0662eb303bf8d2ab0f46402789f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 0662eb303bf8d2ab0f46402789f9de78ad6c45a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:215)
+</pre></div><a href='#' onClick='toggleBox("stack-trace560933971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace560933971'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (0662eb303bf8d2ab0f46402789f9de78ad6c45a8)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Exela Smart Office&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.2, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19G2021, safari:platformVersion: 10.15.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 0662eb303bf8d2ab0f46402789f..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 0662eb303bf8d2ab0f46402789f9de78ad6c45a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:215)
+</pre></div></td>
+<td>87</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "About Exela", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (28fc5b351740ea26a267a1a1d56c211493f5c9e7)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Leadership Team&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19H15, safari:platformVersion: 10.15.7, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 28fc5b351740ea26a267a1a1d56..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 28fc5b351740ea26a267a1a1d56c211493f5c9e7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:306)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1098885018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1098885018'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: Safari on MAC (28fc5b351740ea26a267a1a1d56c211493f5c9e7)] -&gt; xpath: //ul/li//a[contains(text(),&apos;Leadership Team&apos;)]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19H15, safari:platformVersion: 10.15.7, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 28fc5b351740ea26a267a1a1d56..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 28fc5b351740ea26a267a1a1d56c211493f5c9e7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at framework.Waits.waitUntilElementToClick(Waits.java:61)
+	at stepDefinitions.Steps.click_on_following_Options(Steps.java:274)
+	at ?.click on following Options(file:FeatureFiles/VisualCases.feature:306)
+</pre></div></td>
+<td>101</td>
+<td>runner.Runner1@436c81a3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Education", "Visual Cases"</td>
+<td></td>
+<td>57</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Energy & Natural Resources", "Visual Cases"</td>
+<td></td>
+<td>57</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "High Tech", "Visual Cases"</td>
+<td></td>
+<td>58</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "General Scenario", "Visual Cases"</td>
+<td></td>
+<td>74</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Discover", "Visual Cases"</td>
+<td></td>
+<td>90</td>
+<td>runner.Runner1@436c81a3</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Resources", "Visual Cases"</td>
+<td></td>
+<td>77</td>
+<td>runner.Runner1@436c81a3</td></tr>
+</table><p>
+</body>
+</html>

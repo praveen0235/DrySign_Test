@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>TestNG:  test74</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test74</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 10 02:12:04 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>34 seconds (34739 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Group SignIN Menu Validation", "DrySign Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Appium error: An unknown server-side error occurred while processing the command. Original error: Error converting element ID for using in WD atoms: &apos;5005&apos; (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAP-GNY0334&apos;, ip: &apos;192.168.218.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.7.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, buildName: ExelaTech_1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.7.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, buildName: ExelaTech_1, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 6, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 6-11.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 11.0, os_version: 11.0, platform: MAC, platformName: iOS, projectName: ExelaTech_1, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: 65906fd1039e4c98f4541d9b5a3..., sessionName: ExelaTech_1, takesScreenshot: true, udid: 73cc20917201957dc3abb17e5d6..., useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 6, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 6-11.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 11.0, os_version: 11.0, platform: MAC, platformName: MAC, projectName: ExelaTech_1, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: 65906fd1039e4c98f4541d9b5a3..., sessionName: ExelaTech_1, takesScreenshot: true, udid: 73cc20917201957dc3abb17e5d6..., useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 65906fd1039e4c98f4541d9b5a388c7d34078890
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at framework.Elements.jclick(Elements.java:205)
+	at stepDefinitions.DashboardS.click_on_accept_button(DashboardS.java:179)
+	at ?.click on accept button(file:FeatureFiles/DrySign.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace276896678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276896678'><pre>org.openqa.selenium.WebDriverException: Appium error: An unknown server-side error occurred while processing the command. Original error: Error converting element ID for using in WD atoms: &apos;5005&apos; (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAP-GNY0334&apos;, ip: &apos;192.168.218.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.7.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, buildName: ExelaTech_1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.7.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, buildName: ExelaTech_1, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 6, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 6-11.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 11.0, os_version: 11.0, platform: MAC, platformName: iOS, projectName: ExelaTech_1, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: 65906fd1039e4c98f4541d9b5a3..., sessionName: ExelaTech_1, takesScreenshot: true, udid: 73cc20917201957dc3abb17e5d6..., useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 6, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 6-11.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 11.0, os_version: 11.0, platform: MAC, platformName: MAC, projectName: ExelaTech_1, realMobile: true, real_mobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: 65906fd1039e4c98f4541d9b5a3..., sessionName: ExelaTech_1, takesScreenshot: true, udid: 73cc20917201957dc3abb17e5d6..., useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 65906fd1039e4c98f4541d9b5a388c7d34078890
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at framework.Elements.jclick(Elements.java:205)
+	at stepDefinitions.DashboardS.click_on_accept_button(DashboardS.java:179)
+	at ?.click on accept button(file:FeatureFiles/DrySign.feature:7)
+</pre></div></td>
+<td>34</td>
+<td>runner.Runner@3aefae67</td></tr>
+</table><p>
+</body>
+</html>

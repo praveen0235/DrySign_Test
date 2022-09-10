@@ -1,0 +1,372 @@
+<html>
+<head>
+<title>TestNG:  test17</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test17</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 10 11:13:36 EST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>4427 seconds (4427494 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Facilities & Logistics", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:48159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 15e0b57a5097d4d9f8e69d8112f...}
+Session ID: 15e0b57a5097d4d9f8e69d8112f98f8389627739
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1084004426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1084004426'><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:48159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 15e0b57a5097d4d9f8e69d8112f...}
+Session ID: 15e0b57a5097d4d9f8e69d8112f98f8389627739
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:53)
+</pre></div></td>
+<td>294</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "HUMAN RESOURCES", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2fbd869e3caa3e30cf263e4480e...}
+Session ID: 2fbd869e3caa3e30cf263e4480e8ebe1ce83ec28
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace425166118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace425166118'><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:58490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2fbd869e3caa3e30cf263e4480e...}
+Session ID: 2fbd869e3caa3e30cf263e4480e8ebe1ce83ec28
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:77)
+</pre></div></td>
+<td>268</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BUSINESS SOLUTIONS FOR THE LEGAL INDUSTRY", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:31718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: fefeb3f4fe0d643abdef66b0548...}
+Session ID: fefeb3f4fe0d643abdef66b05489c1cd4baf12e8
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:93)
+</pre></div><a href='#' onClick='toggleBox("stack-trace964356732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace964356732'><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:31718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: fefeb3f4fe0d643abdef66b0548...}
+Session ID: fefeb3f4fe0d643abdef66b05489c1cd4baf12e8
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_the_following_suites(Steps.java:291)
+	at ?.click on the following suites(file:FeatureFiles/VisualCases.feature:93)
+</pre></div></td>
+<td>375</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Module", "Visual Cases"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:63062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7f35dac86f73b545b45fbb3f485...}
+Session ID: 7f35dac86f73b545b45fbb3f4851cb92288d5a04
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_following_all_solutions_options(Steps.java:330)
+	at ?.click on following all solutions options(file:FeatureFiles/VisualCases.feature:221)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1739804499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1739804499'><pre>org.openqa.selenium.WebDriverException: Java heap space
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DCAP-WEB-UTINO1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:63062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7f35dac86f73b545b45fbb3f485...}
+Session ID: 7f35dac86f73b545b45fbb3f4851cb92288d5a04
+	at sun.reflect.GeneratedConstructorAccessor72.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at imageMagick.TestXML.imageCreation(TestXML.java:123)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_following_all_solutions_options(Steps.java:330)
+	at ?.click on following all solutions options(file:FeatureFiles/VisualCases.feature:221)
+</pre></div></td>
+<td>221</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "About Exela", "Visual Cases"</td>
+<td><div><pre>java.io.IOException: Cannot create a file when that file already exists
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1064)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at imageMagick.TestXML.imageCreation(TestXML.java:124)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_latest_blogs_and_capture_it(Steps.java:429)
+	at ?.click on latest blogs and capture it(file:FeatureFiles/VisualCases.feature:317)
+</pre></div><a href='#' onClick='toggleBox("stack-trace796815072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796815072'><pre>java.io.IOException: Cannot create a file when that file already exists
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1064)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at imageMagick.TestXML.imageCreation(TestXML.java:124)
+	at imageMagick.TestXML.visualTest(TestXML.java:50)
+	at stepDefinitions.Steps.click_on_latest_blogs_and_capture_it(Steps.java:429)
+	at ?.click on latest blogs and capture it(file:FeatureFiles/VisualCases.feature:317)
+</pre></div></td>
+<td>396</td>
+<td>runner.Runner1@7966baa7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BANKING AND FINANCIAL SERVICES SUITE", "Visual Cases"</td>
+<td></td>
+<td>190</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Business Intelligence, Information Governance, and Data Management", "Visual Cases"</td>
+<td></td>
+<td>214</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finance and Accounting Solutions", "Visual Cases"</td>
+<td></td>
+<td>187</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "MARKETING SOLUTIONS", "Visual Cases"</td>
+<td></td>
+<td>219</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "BACK OFFICE AND OPERATIONS SOLUTIONS", "Visual Cases"</td>
+<td></td>
+<td>247</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Customer Support and Customer Experience Management Services", "Visual Cases"</td>
+<td></td>
+<td>147</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Education", "Visual Cases"</td>
+<td></td>
+<td>202</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Energy & Natural Resources", "Visual Cases"</td>
+<td></td>
+<td>185</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Healthcare", "Visual Cases"</td>
+<td></td>
+<td>164</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "High Tech", "Visual Cases"</td>
+<td></td>
+<td>83</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Insurance", "Visual Cases"</td>
+<td></td>
+<td>188</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Other Modules", "Visual Cases"</td>
+<td></td>
+<td>251</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "General Scenario", "Visual Cases"</td>
+<td></td>
+<td>152</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Discover", "Visual Cases"</td>
+<td></td>
+<td>197</td>
+<td>runner.Runner1@7966baa7</td></tr>
+<tr>
+<td title='runner.Runner1.runScenario()'><b>runScenario</b><br>Test class: runner.Runner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Resources", "Visual Cases"</td>
+<td></td>
+<td>239</td>
+<td>runner.Runner1@7966baa7</td></tr>
+</table><p>
+</body>
+</html>
