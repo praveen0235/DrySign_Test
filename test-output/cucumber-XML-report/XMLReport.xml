@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="216.546897">
-<testcase classname="DrySign Cases" name="Group SignIN Menu Validation" time="37.486005">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="210.031011">
+<testcase classname="DrySign Cases" name="Group SignIN Menu Validation" time="37.672393">
 <system-out><![CDATA[Given navigate to given URL "https://drysign.exelatech.com/signDocument?key=XwXk1GhUmFdT4VTJZA980qZwY&locale=en".passed
 Then select agree check box.................................................passed
 Then click on accept button.................................................passed
@@ -10,7 +10,7 @@ Then save it................................................................pass
 Then system should display download, reject and finish options..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="DrySign Cases" name="To Verify the UI elements present on the View Plan button pop-up present on the Dashboard" time="62.866481">
+<testcase classname="DrySign Cases" name="To Verify the UI elements present on the View Plan button pop-up present on the Dashboard" time="60.36887">
 <system-out><![CDATA[Given navigate to given URL "https://drysign-qa.exela.global/#/"............passed
 When enter the user name as "sid12@mailinator.com"..........................passed
 When enter the password as"Malin@555".......................................passed
@@ -21,7 +21,7 @@ Then user click on View Plan button.........................................pass
 Then Pop Up get displayed with elements.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="DrySign Cases" name="To Verify the Close icon functionality present on the View Plan pop-up screen present on the Dashboard" time="60.585404">
+<testcase classname="DrySign Cases" name="To Verify the Close icon functionality present on the View Plan pop-up screen present on the Dashboard" time="51.172509">
 <system-out><![CDATA[Given navigate to given URL "https://drysign-qa.exela.global/#/"............passed
 When enter the user name as "sid12@mailinator.com"..........................passed
 When enter the password as"Malin@555".......................................passed
@@ -32,7 +32,7 @@ Then existing plan details of the user should get displayed with Upgrade Plan bu
 Then user verify that close icon is present on the pop up...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="DrySign Cases" name="To Verify register user is able to view only the Higher Plan details than the exisiting plan through Upgrade Plan button present on the View Plan pop-up screen" time="55.609007">
+<testcase classname="DrySign Cases" name="To Verify register user is able to view only the Higher Plan details than the exisiting plan through Upgrade Plan button present on the View Plan pop-up screen" time="60.817239">
 <system-out><![CDATA[Given navigate to given URL "https://drysign-qa.exela.global/#/"............passed
 When enter the user name as "sid12@mailinator.com"..........................passed
 When enter the password as"Malin@555".......................................passed

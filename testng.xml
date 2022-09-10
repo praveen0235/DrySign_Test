@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <suite name="mysuite" parallel="tests" thread-count="2">
-    <test name="test4" verbose="2">
-        <parameter name="browser_version" value="14.1"/>
-        <parameter name="resolution" value="1280x1024"/>
+    <test name="test6" verbose="2">
+        <parameter name="browser_version" value="12.1"/>
+        <parameter name="resolution" value="1920x1080"/>
         <parameter name="name" value="ExelaTech_1"/>
         <parameter name="browserstack_debug" value="true"/>
         <parameter name="browserstack_local" value="false"/>
         <parameter name="browserstack_networkLogs" value="true"/>
         <parameter name="platformType" value="OS X"/>
         <parameter name="browser" value="Safari"/>
-        <parameter name="os_version" value="Big Sur"/>
-        <parameter name="device" value="OS X_Big Sur_Safari(1280x1024)"/>
+        <parameter name="os_version" value="Mojave"/>
+        <parameter name="device" value="OS X_Mojave_Safari(1920x1080)"/>
         <parameter name="project" value="ExelaTech_1"/>
         <parameter name="build" value="ExelaTech_1"/>
         <parameter name="UserName" value="praveen688"/>

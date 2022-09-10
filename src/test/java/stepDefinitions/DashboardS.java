@@ -25,6 +25,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,6 +36,7 @@ import pageObjects.USAMobileNoMandateObjectS;
 import pageObjects.pageObjects;
 import pageObjects.pageObjects2;
 import util.PathHelper;
+import util.Xls_Reader;
 
 
 
@@ -55,7 +57,8 @@ SoftAssertions sft = new SoftAssertions();
 	public RemoteWebDriver driver;
 	public String envi;
 	  String pagename;
-	  
+	  public  Xls_Reader suiteXLS;
+	  public  int rowcount;
 	  
 	  public void loadPropertiesFile() throws IOException{
 			PropertyConfigurator.configure(PathHelper.getResourcePath("/src/main/resources/ConfigurationFile/log4j.properties"));
@@ -515,7 +518,8 @@ public void click_on_signature_option() {
 }
 
 @Then("click on type option and select the sign")
-public void click_on_type_option() {
+public void click_on_type_option() throws InterruptedException {
+	Thread.sleep(1500);
 	waits.waitUntilElementLocated(30, pageobjects.TYPE, driver);
 	elements.click(driver, pageobjects.TYPE);
 	
@@ -575,9 +579,32 @@ public void waitToPageRender(Scenario scenario) throws InterruptedException
 	}
 }
 
+@Before
+public void before(Scenario scenario)
+{
+	
+	suiteXLS = new Xls_Reader(PathHelper.getBasePath()+"/test-output/ExcelReport/ExcelReport.xlsx");
+	rowcount = suiteXLS.getRowCount("Result");
+	if(suiteXLS.getCellData("Result", "SlNo", 2).isEmpty())
+	{
+		suiteXLS.setCellData("Result", "SlNo", rowcount+1, "1");
+	}else
+	{
+		suiteXLS.setCellData("Result", "SlNo", rowcount+1, String.valueOf(Integer.parseInt(suiteXLS.getCellData("Result", "SlNo", rowcount))+1));
+	}
+	GenericActions.date(suiteXLS, "TestStartedTime", rowcount+1);
+	suiteXLS.setCellData("Result", "Scenario Name", rowcount+1, scenario.getName());
+	suiteXLS.setCellData("Result", "platformType", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("platformType"));
+	suiteXLS.setCellData("Result", "os_version", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("os_version"));
+	suiteXLS.setCellData("Result", "browser", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("browser"));
+	suiteXLS.setCellData("Result", "browser_version", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("browser_version"));
+	suiteXLS.setCellData("Result", "resolution", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("resolution"));
+	suiteXLS.setCellData("Result", "Device", rowcount+1, Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("device"));
+}
+
 @After
 
-public void closeBrowser(Scenario scenario) throws ParseException{
+public void closeBrowser(Scenario scenario) throws ParseException, java.text.ParseException{
 	JavascriptExecutor jse = (JavascriptExecutor) driver;
 	if(scenario.isFailed()){
 		
@@ -589,6 +616,13 @@ public void closeBrowser(Scenario scenario) throws ParseException{
 		jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Passed\"}}");
 	
 	}
+	
+	suiteXLS.setCellData("Result", "Result", rowcount+1, String.valueOf(scenario.getStatus()));
+	GenericActions.date(suiteXLS, "TestEndedTime", rowcount+1);
+	String startdate= suiteXLS.getCellData("Result", "TestStartedTime", rowcount+1);
+	String Enddate= suiteXLS.getCellData("Result", "TestEndedTime", rowcount+1);
+	GenericActions.datediff(startdate, Enddate, suiteXLS, rowcount+1);
+	
 	System.out.println("Scenario Status is: "+scenario.getStatus());
 	System.out.println("Scenario Status is: "+scenario.getName());
 	driver.quit();

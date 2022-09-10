@@ -709,7 +709,7 @@ public static  void hitoryReports() throws IOException
     	
     	SimpleDateFormat ft1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss aa");
     	String ExeTime1 = ft1.format(dNow);
-    	suite.setCellData("TestSuite", testCasedate, rownum, ExeTime);
+    	suite.setCellData("Result", testCasedate, rownum, ExeTime);
     	//suite.setCellDataasDate("TestSuite", testCasedate, rownum, ExeTime);
     	//suite.setCellData("RoughSheet", testCasedate, 2, ExeTime1);
 	}
@@ -726,14 +726,8 @@ public static  void hitoryReports() throws IOException
 			String diffdate = String.format("%02d:%02d:%02d", diffHours, diffMinutes, diffSeconds);
 			
 			//String diffdate =diffHours+":"+diffMinutes+":"+diffSeconds;
-			suite.setCellData("TestSuite", "Timetakentofinish", rownum, diffdate);
+			suite.setCellData("Result", "DurationOfRun", rownum, diffdate);
 		}
-
-
-		
-
-    
-           
 
    	           public static void copySheetArchive(XSSFSheet inputSheet,XSSFSheet outputSheet,Xls_Reader insuite,Xls_Reader outsuite,String archiveSheet) throws ParseException, IOException 
    	           { 
